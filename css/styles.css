@@ -47,6 +47,18 @@ header{
     background-color: #393b4348;
 }
 
+header #btn_menu{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+header label:hover{
+    cursor: pointer;
+}
+
 .menu{
     display: flex;
     align-items: center;
@@ -56,6 +68,10 @@ header nav ul{
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -75,6 +91,10 @@ footer ul{
 
 footer ul li{
     margin-bottom: 5px;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
 }
 
 footer section{
@@ -331,4 +351,41 @@ footer a img{
 
 .contact-field textarea{
     width: 380px;
+}
+
+.form-control::placeholder{
+    color: #b4b0b0;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px){
+
+    /* Header */
+    
+    header label{
+        display: block;
+    }
+
+    header label img{
+        width: 50px;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: #000000;
+        top: 94px;
+        visibility: hidden;
+        width: 100vw;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    #btn_menu:checked~.menu{
+        visibility: visible;
+    }
+    
 }
