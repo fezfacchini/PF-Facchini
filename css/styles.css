@@ -15,7 +15,7 @@ button{
     font-weight: bold;
     color: #ffffff;
     border-radius: 12px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #000000;
     background-color: #000000;
     padding: 10px;
 }
@@ -26,6 +26,7 @@ h1{
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 20px; /* Espaciado interno del texto */
     text-align: center;
+    margin-top: 20px;
 }
 
 h2{
@@ -35,6 +36,12 @@ h2{
 
 a{
     text-decoration: none;
+}
+
+.btn{
+    background-color: #ff6200e2;
+    color: #FFFFFF;
+    
 }
 
 /* Menu Navbar en header */
@@ -105,7 +112,6 @@ footer section{
 footer section a{
     display: flex;
     gap: 10px;
-    padding: 20px 0;
 }
 
 footer a img{
@@ -118,7 +124,7 @@ footer a img{
     border-radius: 8px;
     font-size: 20px;
     background-color: #ff6200e2;
-    padding: 0 20px;
+    padding: 15px 10px 0 10px;
     height: min-content;
     align-self: center;
 }
@@ -156,7 +162,7 @@ footer a img{
 
 /* Cards */
 
-.contenedor-flex {
+.cards-prog {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -165,17 +171,26 @@ footer a img{
 }
 
 .card {
-    width: 350px;
-    height: 450px;
+    max-width: 350px;
+    gap: 20px;
     background-color: #393b4348;
     border-radius: 20px;
     border: 1px solid #000000;
     overflow: hidden;
 }
 
+.card-body{
+    text-align: center;
+}
+
 .card img {
     width: 100%;
     height: 200px;
+}
+
+.card-title{
+    padding: 0;
+    color: #FFFFFF;
 }
 
 .card-text {
@@ -187,6 +202,21 @@ footer a img{
 
 /* Pricing */
 /* Cards Pricing */
+
+.cards-price {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.card-text-pricing {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+}
 
 .pricing-name{
     color: #FF8C42;
@@ -225,7 +255,7 @@ footer a img{
 /* Iconos */
 
 .discover{
-    padding: 20px 40px;
+    padding: 0 40px 30px 40px;
     border: 1px solid #b7b9bd7c;
     align-items: center;
 }
@@ -266,7 +296,7 @@ footer a img{
 }
 
 .card-docs{
-    width: 300px;
+    max-width: 300px;
     height: 250px;
     background-color: #393b4348;
     border-radius: 20px;
@@ -284,7 +314,7 @@ footer a img{
 .card-content img{
     width: 60px;
     align-content: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 /* Blog */
@@ -298,6 +328,7 @@ footer a img{
     -webkit-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
     -moz-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
     background-image: url(./../assets/wave.svg);
+    background-size: cover;
 }
 
 .documentation{
@@ -346,11 +377,13 @@ footer a img{
 
 .contact-field input{
     height: 35px;
-    width: 380px;
+    max-width: 380px;
+    width: 80vw;
 }
 
 .contact-field textarea{
-    width: 380px;
+    max-width: 380px;
+    width: 80vw;
 }
 
 .form-control::placeholder{
@@ -359,6 +392,14 @@ footer a img{
 
 /* Media queries */
 @media screen and (max-width: 768px){
+
+    h1{
+        font-size: 34px;
+    }
+
+    button{
+        font-size: 15px;
+    }
 
     /* Header */
     
@@ -372,12 +413,13 @@ footer a img{
 
     .menu{
         position: absolute;
-        background-color: #000000;
+        background-color: #181818;
         top: 94px;
         visibility: hidden;
-        width: 100vw;
+        width: 97vw;
         justify-content: center;
         z-index: 1;
+        border-radius: 0 0 15px 15px;
     }
 
     .menu ul{
@@ -386,6 +428,32 @@ footer a img{
 
     #btn_menu:checked~.menu{
         visibility: visible;
+    }
+
+    /* Footer */
+
+    footer ul{
+        padding: 20px
+    }
+
+    /* Pricing */
+
+    .cards-price{
+        padding: 0 20px;
+    }
+
+    /* Docs */
+    /* Mini banner */
+
+    .subtitle{
+        font-size: 22px;
+    }
+
+    /* Contactanos */
+    /* Iconos */
+
+    .contact-socials{
+        padding: 0;
     }
     
 }
