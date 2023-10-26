@@ -1,0 +1,30 @@
+/* Banner de imagen con titulo adentro */
+
+.banner{
+    height: 250px;
+    background-image: url(./../assets/bg-image.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-project{
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.title-empresa{
+    color: white;
+}
+
+.title-project, .title-empresa {
+    display: block;
+    text-align: center;
+}
+
+.buttons-banner{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

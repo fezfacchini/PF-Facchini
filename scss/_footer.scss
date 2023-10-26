@@ -1,0 +1,44 @@
+
+/* Footer */
+
+footer{
+    background-color: #393b4348;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    ul{
+        list-style: none;
+        padding: 20px 100px;
+        li{
+            margin-bottom: 5px;
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            display: flex;
+            gap: 10px;
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+.btn-language{
+    margin: 0 100px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #ff6200e2;
+    padding: 15px 10px 0 10px;
+    height: min-content;
+    align-self: center;
+}

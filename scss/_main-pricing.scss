@@ -1,0 +1,44 @@
+/* Pricing */
+/* Cards Pricing */
+
+.main-pricing{
+    section{
+        .cards-price {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 60px 0;
+            .card{
+                max-width: 350px;
+                gap: 20px;
+                background-color: #393b4348;
+                border-radius: 20px;
+                border: 1px solid #000000;
+                overflow: hidden;
+                .card-text-pricing {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+                    align-items: center;
+                    .pricing-name{
+                        color: #FF8C42;
+                    }
+                    .price-mount{
+                        font-size: 42px;
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+                    .pricing-list{
+                        align-self: center;
+                        margin-top: 15px;
+                    }
+                    .pricing-btn{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+/* Blog */
+
+.main-blog{
+    .documentation{
+        text-align: -webkit-center;
+        .mini-banner{
+            height: 320px;
+            background-image: url(./../assets/bg-image-minibanner.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blog-lorem{
+            padding: 20px 40px;
+            border: 1px solid #b7b9bd7c;
+            width: 80%;
+            margin: 50px 0;
+            box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
+            -webkit-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
+            -moz-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
+            background-image: url(./../assets/wave.svg);
+            background-size: cover;
+        }
+    }
+}

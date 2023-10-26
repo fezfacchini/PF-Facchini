@@ -1,0 +1,77 @@
+/* Docs */
+
+/* Mini banner */
+
+.main-docs{
+    .mini-banner{
+        height: 320px;
+        background-image: url(./../assets/bg-image-minibanner.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            .subtitle{
+                font-size: 28px;
+            }
+        }
+    }
+
+    /* Iconos */
+
+    .discover{
+        padding: 0 40px 30px 40px;
+        border: 1px solid #b7b9bd7c;
+        align-items: center;
+        p{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .icons-flex{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+            .icon-style{
+                border: 1px solid #FFFFFF;
+                padding: 15px;
+                background-color: #393b4348;
+                align-self: center;
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            
+        }
+    }
+
+    /* Cards Docs */
+
+    .products-docs{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        .card-docs{
+            max-width: 300px;
+            height: 250px;
+            background-color: #393b4348;
+            border-radius: 20px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            .card-content {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                align-items: center;
+                img{
+                    width: 60px;
+                    align-content: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
