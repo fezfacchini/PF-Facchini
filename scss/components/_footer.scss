@@ -2,7 +2,7 @@
 /* Footer */
 
 footer{
-    background-color: #393b4348;
+    background-color: nth($list: $colores, $n: 6);
     display: flex;
     flex-wrap: wrap;
     padding: 40px 0;
@@ -28,6 +28,10 @@ footer{
             img{
                 width: 28px;
                 height: 28px;
+                animation-name: spinner;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear ;
             }
         }
     }
@@ -37,8 +41,17 @@ footer{
     margin: 0 100px;
     border-radius: 8px;
     font-size: 20px;
-    background-color: #ff6200e2;
+    background-color: nth($list: $colores, $n: 2);
     padding: 15px 10px 0 10px;
     height: min-content;
     align-self: center;
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

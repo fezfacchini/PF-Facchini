@@ -12,7 +12,7 @@
             .card{
                 max-width: 350px;
                 gap: 20px;
-                background-color: #393b4348;
+                background-color: nth($list: $colores, $n: 6);
                 border-radius: 20px;
                 border: 1px solid #000000;
                 overflow: hidden;
@@ -22,7 +22,7 @@
                     padding: 5px;
                     align-items: center;
                     .pricing-name{
-                        color: #FF8C42;
+                        color: nth($list: $colores, $n: 2);
                     }
                     .price-mount{
                         font-size: 42px;

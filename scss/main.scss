@@ -1,11 +1,13 @@
-/* @import "variables"; */
-@import "global";
-@import "header";
-@import "footer";
-@import "banner";
-@import "main-index";
-@import "main-pricing";
-@import "main-docs";
-@import "main-blog";
-@import "main-contact";
-@import "media-queries";
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/lists";
+@import "components/reset";
+@import "components/header";
+@import "components/footer";
+@import "components/banner";
+@import "pages/main-index";
+@import "pages/main-pricing";
+@import "pages/main-docs";
+@import "pages/main-blog";
+@import "pages/main-contact";
+@import "utilities/media-queries";

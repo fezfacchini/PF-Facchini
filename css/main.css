@@ -1,7 +1,6 @@
-/* @import "variables"; */
 /* Estilos Globales */
 * {
-  color: #FFFFFF;
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +14,7 @@ body {
 button {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
   border-radius: 12px;
   border: 1px solid #000000;
   background-color: #000000;
@@ -24,8 +23,8 @@ button {
 
 h1 {
   font-size: 40px;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  background-color: black;
   padding: 10px 20px; /* Espaciado interno del texto */
   text-align: center;
   margin-top: 20px;
@@ -42,7 +41,7 @@ a {
 
 .btn {
   background-color: rgba(255, 98, 0, 0.8862745098);
-  color: #FFFFFF;
+  color: white;
 }
 
 /* Menu Navbar en header */
@@ -52,6 +51,10 @@ header {
   align-items: center;
   padding: 15px;
   background-color: rgba(57, 59, 67, 0.2823529412);
+}
+header a img:hover {
+  transform: rotate(360deg);
+  transition: 4s;
 }
 header #btn_menu {
   display: none;
@@ -104,6 +107,10 @@ footer section a {
 footer section a img {
   width: 28px;
   height: 28px;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .btn-language {
@@ -116,6 +123,14 @@ footer section a img {
   align-self: center;
 }
 
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Banner de imagen con titulo adentro */
 .banner {
   height: 250px;
@@ -147,6 +162,9 @@ footer section a img {
 }
 
 /* Cards */
+.main-index .banner .bg-body-banner {
+  background-color: transparent;
+}
 .main-index .cards-prog {
   display: flex;
   justify-content: space-evenly;
@@ -171,13 +189,18 @@ footer section a img {
 }
 .main-index .cards-prog .card .card-body .card-title {
   padding: 0;
-  color: #FFFFFF;
+  color: white;
 }
 .main-index .cards-prog .card .card-body .card-text {
   display: flex;
   flex-direction: column;
   padding: 15px;
   align-items: center;
+}
+.main-index .cards-prog .card .card-body .btn:hover {
+  background-color: rgba(255, 98, 0, 0.8862745098);
+  color: white;
+  text-decoration: underline;
 }
 
 /* Pricing */
@@ -204,7 +227,7 @@ footer section a img {
   align-items: center;
 }
 .main-pricing section .cards-price .card .card-text-pricing .pricing-name {
-  color: #FF8C42;
+  color: rgba(255, 98, 0, 0.8862745098);
 }
 .main-pricing section .cards-price .card .card-text-pricing .price-mount {
   font-size: 42px;
@@ -231,6 +254,9 @@ footer section a img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-docs .mini-banner h1 {
+  background-color: transparent;
 }
 .main-docs .mini-banner h1 .subtitle {
   font-size: 28px;
@@ -260,6 +286,8 @@ footer section a img {
 .main-docs .discover .icons-flex .icon-style img {
   width: 32px;
   height: 32px;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .main-docs .products-docs {
   padding: 20px;
@@ -298,6 +326,9 @@ footer section a img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-blog .documentation .mini-banner h1 {
+  background-color: transparent;
 }
 .main-blog .documentation .blog-lorem {
   padding: 20px 40px;

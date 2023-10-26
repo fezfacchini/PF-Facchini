@@ -10,6 +10,7 @@
         justify-content: center;
         align-items: center;
         h1{
+            background-color: transparent;
             .subtitle{
                 font-size: 28px;
             }
@@ -35,11 +36,13 @@
             .icon-style{
                 border: 1px solid #FFFFFF;
                 padding: 15px;
-                background-color: #393b4348;
+                background-color: nth($list: $colores, $n: 6);
                 align-self: center;
                 img{
                     width: 32px;
                     height: 32px;
+                    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                 }
             }
             
@@ -57,7 +60,7 @@
         .card-docs{
             max-width: 300px;
             height: 250px;
-            background-color: #393b4348;
+            background-color: nth($list: $colores, $n: 6);
             border-radius: 20px;
             border: 1px solid #000000;
             overflow: hidden;
@@ -75,3 +78,4 @@
         }
     }
 }
+

@@ -46,5 +46,5 @@
 }
 
 .form-control::placeholder{
-    color: #b4b0b0;
+    color: nth($list: $colores, $n: 4);
 }
