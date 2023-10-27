@@ -1,0 +1,78 @@
+/* Media queries */
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 34px;
+    }
+
+    button{
+        font-size: 15px;
+    }
+
+    /* Header */
+    
+    header {
+        #btn_menu:checked~.menu{
+            visibility: visible;
+        }
+        label{
+            display: block;
+            img{
+                width: 50px;
+            }
+        }
+        .menu{
+            position: absolute;
+            background-color: #181818;
+            top: 94px;
+            visibility: hidden;
+            width: 97vw;
+            justify-content: center;
+            z-index: 1;
+            border-radius: 0 0 15px 15px;
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+    
+    /* Footer */
+
+    footer ul{
+        padding: 20px
+    }
+
+    /* Pricing */
+
+    .main-pricing{
+        section{
+            .cards-price{
+                padding: 0 20px;
+            }
+        }
+    }
+
+    /* Docs */
+    /* Mini banner */
+
+    .main-docs{
+        .mini-banner{
+            h1{
+                .subtitle{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    /* Contactanos */
+    /* Iconos */
+
+    .main-contact{
+        .contact{
+            .contact-socials{
+                padding: 0;
+            }
+        }
+    }
+}

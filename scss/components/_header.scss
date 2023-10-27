@@ -1,0 +1,51 @@
+
+/* Menu Navbar en header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: nth($list: $colores, $n: 6);
+    a{
+        img{
+            &:hover{
+                transform: rotate(360deg);
+                transition: 4s;
+            }
+        }
+    }
+
+    #btn_menu{
+        display: none;
+    }
+
+    label{
+        display: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    nav {
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            
+            li{
+                a{
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                } 
+            }
+        }
+    }    
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
