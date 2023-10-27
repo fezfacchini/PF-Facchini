@@ -193,9 +193,10 @@ footer section a img {
 }
 .main-index .cards-prog .card .card-body .card-text {
   display: flex;
-  flex-direction: column;
   padding: 15px;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .main-index .cards-prog .card .card-body .btn:hover {
   background-color: rgba(255, 98, 0, 0.8862745098);
@@ -286,8 +287,11 @@ footer section a img {
 .main-docs .discover .icons-flex .icon-style img {
   width: 32px;
   height: 32px;
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transition: height 0.5s, width 0.5s;
+}
+.main-docs .discover .icons-flex .icon-style img:hover {
+  height: 45px;
+  width: 45px;
 }
 .main-docs .products-docs {
   padding: 20px;

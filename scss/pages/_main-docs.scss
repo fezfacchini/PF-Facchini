@@ -41,8 +41,10 @@
                 img{
                     width: 32px;
                     height: 32px;
-                    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    transition: height 0.5s, width 0.5s;
+                    &:hover{
+                        height: 45px; width: 45px;
+                    }
                 }
             }
             
