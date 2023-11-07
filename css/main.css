@@ -266,6 +266,7 @@ footer section a img {
 }
 .main-pricing section .cards-price .card .card-text-pricing .pricing-btn {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* Docs */
@@ -286,6 +287,9 @@ footer section a img {
 }
 .main-docs .mini-banner h1 .subtitle {
   font-size: 28px;
+}
+.main-docs .title-docs {
+  margin-top: 15px;
 }
 .main-docs .discover {
   padding: 0 40px 30px 40px;
@@ -319,7 +323,7 @@ footer section a img {
   width: 45px;
 }
 .main-docs .products-docs {
-  padding: 20px;
+  padding: 20px 20px 35px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

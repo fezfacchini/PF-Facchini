@@ -17,6 +17,10 @@
         }
     }
 
+    .title-docs{
+        margin-top: 15px;
+    }
+
     /* Iconos */
 
     .discover{
@@ -54,7 +58,7 @@
     /* Cards Docs */
 
     .products-docs{
-        padding: 20px;
+        padding: 20px 20px 35px 20px;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
