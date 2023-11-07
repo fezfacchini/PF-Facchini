@@ -76,3 +76,13 @@
         }
     }
 }
+
+@media screen and (max-width: 991px){
+    header{
+        .navbar{
+            .container-fluid{
+                gap: 0;
+            }
+        }
+    }
+}

@@ -7,62 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link css Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Link a mi CSS -->
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <!-- Link a mi SCSS -->
     <link rel="stylesheet" href="./css/main.css">
-    <title>Home</title>
+    <title>Waveback | Home</title>
     <link rel="icon" type="image/x-icon" href="./assets/wave.ico">
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="./assets/wave.ico" alt="LogoMarca" class="logo-hidden"></a>
-        <input type="checkbox" id="btn_menu">
-        <label for="btn_menu"><img src="./assets/hamburger-menu.svg" alt="Menu" class="icon-menu"></label>
+        <!-- <input type="checkbox" id="btn_menu">
+        <label for="btn_menu"><img src="./assets/hamburger-menu.svg" alt="Menu" class="icon-menu"></label> -->
 
-        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+                <a href="./index.html"><img src="./assets/wave.ico" alt="LogoMarca" class="logo-hidden"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
+                    <li>
+                        <a class="active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./pages/pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="./pages/docs.html">Docs</a>
+                    </li>
+                    <li>
+                        <a href="./pages/blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">Contact</a>
+                    </li>
                 </ul>
               </div>
             </div>
-          </nav> -->
-          
-        <nav class="menu navbar navbar-expand-lg">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./pages/pricing.html">Pricing</a>
-                </li>
-                <li>
-                    <a href="./pages/docs.html">Docs</a>
-                </li>
-                <li>
-                    <a href="./pages/blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="./pages/contact.html">Contact</a>
-                </li>
-            </ul>
         </nav>
     </header>
     <main class="main-index">
@@ -81,7 +61,7 @@
             </h1>
         </section>
         <section>
-            <h2>Programming languages</h2>
+            <h2 class="title-index">Programming languages</h2>
             <article class="cards-prog row d-flex justify-content-center align-items-center">
                 <div class="card col-lg-3 col-md-6 col-sm-12">
                     <img src="./assets/img-python.jpg" class="card-img-top" alt="python">
@@ -111,6 +91,78 @@
         </section>  
     </main>
     <footer>
+        <div class="background-motion">
+            <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="100%"
+          height="100%"
+          viewBox="0 0 1600 900"
+        >
+          <defs>
+            <linearGradient id="bg" x2="0%" y2="100%">
+              <stop
+                offset="0%"
+                style="stop-color: rgba(53, 127, 242, 0.6)"
+              ></stop>
+              <stop
+                offset="100%"
+                style="stop-color: rgba(38, 89, 190, 0.06)"
+              ></stop>
+            </linearGradient>
+            <path
+              id="wave"
+              fill="url(#bg)"
+              d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+      s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+            />
+          </defs>
+          <g>
+            <use xlink:href="#wave" opacity=".3">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="8s"
+                calcMode="spline"
+                values="270 230; -334 180; 270 230"
+                keyTimes="0; .5; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacity=".6">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="6s"
+                calcMode="spline"
+                values="-270 230;243 220;-270 230"
+                keyTimes="0; .6; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacty=".9">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="4s"
+                calcMode="spline"
+                values="0 230;-140 200;0 230"
+                keyTimes="0; .4; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+          </g>
+            </svg>
+        </div>
         <ul>
             <li><a href="">Waveback Business</a></li>
             <li><a href="">Get the app</a></li>
@@ -125,7 +177,7 @@
         </ul>
         <section class="btn-language">
             <a href="">
-                <img src="./assets/language.svg" alt="Lenguaje">
+                <img src="./assets/language.svg" alt="Language">
                 <p>English</p>
             </a>
         </section>

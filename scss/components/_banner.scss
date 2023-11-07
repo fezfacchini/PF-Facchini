@@ -3,6 +3,8 @@
 .banner{
     height: 250px;
     background-image: url(./../assets/bg-image.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
