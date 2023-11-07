@@ -15,16 +15,20 @@
         }
         .blog-lorem{
             display: grid;
-            padding: 20px 40px;
-            border: 1px solid #b7b9bd7c;
-            width: 80%;
+            padding: 20px 40px; 
+            width: 75%;
             margin: 50px auto;
-            box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
-            -webkit-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
-            -moz-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
             background-image: url(./../assets/wave.svg);
             background-size: cover;
             justify-content: center;
+            transition: 1s;
+            /* border: 1px solid #0000007c; */
+            &:hover{
+                /* border: 1px solid #0000007c; */
+                box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
+                -webkit-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
+                -moz-box-shadow: -7px -1px 40px 8px rgba(224,224,224,0.51);
+            }
         }
     }
 }
