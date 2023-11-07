@@ -405,6 +405,11 @@ footer section a img {
 .main-contact .contact .contact-socials .social-icons img {
   width: 60px;
   height: 60px;
+  transition: height 0.5s, width 0.5s;
+}
+.main-contact .contact .contact-socials .social-icons img:hover {
+  height: 70px;
+  width: 70px;
 }
 .main-contact .contact .contact-form .contact-field {
   margin-bottom: 30px;
